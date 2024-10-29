@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Anggota Perpustakaan</title>
+    <style>
+        body {
+            background-image: url(hai.jpg);
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 139, 0.8);
+            border: 2px dashed white;
+            border-radius: 15px;
+            color: white;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="date"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group .gender,
+        .form-group .favorite-food {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .gender label,
+        .form-group .favorite-food label {
+            margin-right: 20px;
+        }
+        .form-group .gender input,
+        .form-group .favorite-food input {
+            margin-right: 5px;
+        }
+        .form-group .buttons {
+            text-align: center;
+        }
+        .form-group .buttons input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .form-group .buttons input[type="button"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Anggota Perpustakaan</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="ketikan nama kamu">
+            </div>
+            <div class="form-group">
+                <label for="kota-lahir">Kota Lahir</label>
+                <input type="text" id="kota-lahir" name="kota-lahir" placeholder="ketikan dan/atau pilih nama kota lahir kamu">
+            </div>
+            <div class="form-group">
+                <label for="tanggal-lahir">Tanggal Lahir</label>
+                <input type="date" id="tanggal-lahir" name="tanggal-lahir" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="form-group gender">
+                <label>Gender</label>
+                <label><input type="radio" name="gender" value="pria"> Pria</label>
+                <label><input type="radio" name="gender" value="wanita"> Wanita</label>
+            </div>
+            <div class="form-group">
+                <label for="no-telepon">No Telepon</label>
+                <input type="text" id="no-telepon" name="no-telepon" placeholder="ketikan no telepon kamu">
+            </div>
+            <div class="form-group favorite-food">
+                <label>Makanan Favorit</label>
+                <label><input type="checkbox" name="makanan-favorit" value="Mie-Ayam"> Mie Ayam</label>
+                <label><input type="checkbox" name="makanan-favorit" value="Indomie-goreng"> Indomie goreng</label>
+            </div>
+            <div class="form-group">
+                <label for="agama">Agama</label>
+                <select id="agama" name="agama">
+                    <option value=""></option>
+        <option value="Islam">Islam</option>
+        <option value="Kristen">Kristen</option>
+        <option value="Katholik">Katholik</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Buddha">Buddha</option>
+        <option value="Konghuchu">Konghucu</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" rows="4" placeholder="ketikan alamat kamu"></textarea>
+            </div>
+            <div class="form-group buttons">
+                <input type="button" value="Clear">
+                <input type="button" value="Send">
+                <button><a href="jadwal.html">Jadwal</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
