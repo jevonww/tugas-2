@@ -11,8 +11,8 @@
             font-family: Arial, sans-serif;
         }
         .container {
-            width: 50%;
-            margin: 50px auto;
+            width: 90%;
+            margin: 30px auto;
             padding: 20px;
             background-color: rgba(0, 0, 139, 0.8);
             border: 2px dashed white;
@@ -34,7 +34,7 @@
         .form-group input[type="date"],
         .form-group select,
         .form-group textarea {
-            width: 100%;
+            width: 90%;
             padding: 10px;
             border: none;
             border-radius: 5px;
@@ -44,16 +44,16 @@
             margin-right: 10px;
         }
         .form-group .gender,
-        .form-group .favorite-food {
+        .form-group .favorite-music {
             display: flex;
             align-items: center;
         }
         .form-group .gender label,
-        .form-group .favorite-food label {
+        .form-group .favorite-music label {
             margin-right: 20px;
         }
         .form-group .gender input,
-        .form-group .favorite-food input {
+        .form-group .favorite-music input {
             margin-right: 5px;
         }
         .form-group .buttons {
@@ -99,10 +99,13 @@
                 <label for="no-telepon">No Telepon</label>
                 <input type="text" id="no-telepon" name="no-telepon" placeholder="ketikan no telepon kamu">
             </div>
-            <div class="form-group favorite-food">
-                <label>Makanan Favorit</label>
-                <label><input type="checkbox" name="makanan-favorit" value="Mie-Ayam"> Mie Ayam</label>
-                <label><input type="checkbox" name="makanan-favorit" value="Indomie-goreng"> Indomie goreng</label>
+            <div class="form-group favorite-music">
+                <label>Genre Music Favorit</label>
+                <label><input type="checkbox" name="Music" value="Pop"> Pop</label>
+                <label><input type="checkbox" name="Music" value="Rock"> Rock</label>
+                <label><input type="checkbox" name="Music" value="Jazz"> Jazz</label>
+                <label><input type="checkbox" name="Music" value="Slow Rock"> Slow Rock</label>
+                
             </div>
             <div class="form-group">
                 <label for="agama">Agama</label>
